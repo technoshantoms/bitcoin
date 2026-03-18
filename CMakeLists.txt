@@ -27,7 +27,7 @@ get_directory_property(precious_variables CACHE_VARIABLES)
 # Project / Package metadata
 #=============================
 set(CLIENT_NAME "Bitcoin Core")
-set(CLIENT_VERSION_MAJOR 30)
+set(CLIENT_VERSION_MAJOR 31)
 set(CLIENT_VERSION_MINOR 99)
 set(CLIENT_VERSION_BUILD 0)
 set(CLIENT_VERSION_RC 0)
@@ -690,6 +690,7 @@ if(configure_warnings)
       message(WARNING "${warning}")
     endforeach()
     message("  ******\n")
+    message(AUTHOR_WARNING "Warnings have been encountered!")
 endif()
 
 # We want all build properties to be encapsulated properly.
